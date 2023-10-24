@@ -3,27 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growflix</title>
+    <title>Growflix - All Growflix videos in one place.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./src/assets/css/styles.css">
 </head>
-<body>
+<body class="bg-black">
 
-    <section class="hero">
-        <header>
-            <nav></nav>
-        </header>
-    </section>
+    <header class="hero container-fluid p-3">
+        <nav class="navbar p-0">
+            <a href="#" rel="noopener noreferrer"><img style="width: 33%;" src="./src/assets/images/logo-growflix.svg" alt="logo growflix"></a>
+        </nav>
 
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
+        <div class="container d-flex flex-column justify-content-center align-items-center gap-3 py-5 text-center">
+            
+            <h1 class="display-1 fw-bold mt-1">Growcasts, webinars and<br>
+            much more. Without limits.</h1>
+            
+            <h2 class="fs-5 fw-normal">Watch wherever you want</h2>
+            
+            <p class="fs-5">Ready to watch?</p>
+            
+            <button class="btn btn-primary rounded-1 border-0 px-4 py-3 fs-2 fw-bold"><a class="text-decoration-none text-light" href="./home.html">Let's go!</a></button>
+        </div>
+    </header>
+
+    <main class="container-fluid text-white">
+      <div class="container">
+        <section class="row text-center text-sm-start align-items-center py-5 px-3">
+          <div class="col-12 col-sm-6 pt-5 pb-sm-5 px-3">
+              <h2 class="display-4 fw-bolder mb-4">Enjoy it on TV.</h2>
+              <p class="fs-3">Watch on Smart TVs,<br>
+                PlayStation, Xbox, Chromecast<br>
+                and other devices.</p>
+          </div>
+  
+          <div class="col-12 col-sm-6">
+              <img class="img-fluid" src="./src/assets/images/tela-tv-dia-dev.png" alt="" srcset="Television image">
+          </div>
+      </section>
+      </div>
+
+      <div class="row divider"></div>
+      
+      <div class="container">
+        <section class="row text-center text-sm-start align-items-center py-5 px-3">
+            <div class="col-12 col-sm-6">
+                <img class="img-fluid" src="./src/assets/images/devices.png" alt="devices image">
+            </div>
+
+            <div class="col-12 col-sm-6 pt-5 pt-sm-5 px-3">
+                <h2 class="display-4 fw-bolder mb-4">Watch whenever you want.</h2>
+                <p class="fs-3">Watch on cell phone, tablet, Smart TV or notebook without paying extra for it.</p>
+            </div>
+        </section>
+      </div>
+        
+      <div class="row divider"></div>
+
+      <div class="container">
+        <section class="row px-3 py-5 text-center">
+            <div class="col px-3">
+                <h2 class="display-4 fw-bolder mb-4">FAQ</h2>
+                
+                <div class="container-fluid p-0 d-flex justify-content-center align-items-center">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button bg-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What is Growflix?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+  
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How much does Growflix cost?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                      </div>
+  
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Where can I watch?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                      </div>
+  
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                              What can I watch on Growflix?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                              Is Growflix suitable for children?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="fs-5 pt-5">Ready to watch?</p>
+                
+                <div class="pb-5 text-center">
+                    <button class="btn btn-primary rounded-1 border-0 px-4 py-3 fs-2 fw-bold"><a class="text-decoration-none text-light" href="./home.html">Let's go!</a></button>
+                </div>
+            </div>
+        </section>
+      </div>
+
+        <div class="row divider"></div>
     </main>
 
-    <footer>
+    <footer class="container-fluid px-3">
+        <div class="row pt-5 px-3">
+            <p>Doubts? Call 0800 591 8942</p>
+        </div>
 
+        <div class="row px-3">
+            <div class="col-6 col-sm-3 pt-5">
+                <p>FAQ</p>
+                <p>Relationship with investors</p>
+                <p>Ways to watch</p>
+                <p>Corporate information</p>
+                <p>Only on Growflix</p>
+            </div>
+
+            <div class="col-6 col-sm-3 pt-5">
+                <p>Help center</p>
+                <p>Careers</p>
+                <p>Terms of use</p>
+                <p>Contact</p>
+            </div>
+            
+            <div class="col-6 col-sm-3 pt-5">
+                <p>Account</p>
+                <p>Redeem prepaid card</p>
+                <p>Privacy</p>
+                <p>Speed test</p>
+            </div>
+            
+            <div class="col-6 col-sm-3 pt-5">
+                <p>Media center</p>
+                <p>Buy prepaid card</p>
+                <p>Cookie preferences</p>
+                <p>Lawful notices</p>
+            </div>
+        </div>
+
+        <div class="row py-5 px-3">
+            <p>Growflix Growdev</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

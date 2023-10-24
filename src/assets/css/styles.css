@@ -1,0 +1,53 @@
+.hero {
+    background-image: url(../images/banner-initial.png);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #e50914 !important;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    background-color: #b6060f !important;
+}
+
+.divider {
+    height: 3px;
+    background-color: #515c6f;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 850px;
+}
+
+.accordion-item {
+    border: 5px solid #000000;
+}
+
+.accordion-button {
+    background-color: #303030 !important;
+    color: #fff;
+    padding: 25px !important;
+    font-size: 26px;
+}
+
+.accordion-button::after {
+    background-image: url(../images/add.svg) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+}
+
+footer {
+    color: #757575;
+}
+
+footer .col-6 p {
+    font-size: small;
+}
