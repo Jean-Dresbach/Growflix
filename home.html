@@ -8,22 +8,138 @@
 
     <link rel="stylesheet" href="./src/assets/css/styles.css">
 </head>
-<body class="bg-black">
+<body class="bg-black" id="body">
+    <header class="container hero-home mb-5">
+        <nav class="py-3 text-center">
+            <a href="./index.html" rel="noopener noreferrer" class="navbar-brand p-0"><img style="width: 150px;" src="./src/assets/images/logo-growflix.svg" alt="Texto growflix em vermelho"></a>
 
-    <header class="container-fluid p-3">
-        <nav class="navbar p-0">
-            <a href="./index.html" rel="noopener noreferrer"><img style="width: 33%;" src="./src/assets/images/logo-growflix.svg" alt="logo growflix"></a>
+            <button type="button" id="menu-toggler">
+                <div>
+                    <div id="menu-toggler_burger"></div>
+                </div>
+            </button>
+            
+            <div class="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#body">Início</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#growcast">Growcast [Episódios]</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#flutter">Webinar em Flutter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#ux/ui">Jornada UX/UI</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#diverse">Diversos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#FAQ">Dúvidas</a>
+                    </li>
+                  </ul>
+            </div>
         </nav>
-
+        <!-- <nav class="navbar navbar-dark navbar-expand-lg p-3">
+            <a href="./index.html" rel="noopener noreferrer" class="navbar-brand p-0"><img style="width: 120px;" src="./src/assets/images/logo-growflix.svg" alt="Texto growflix em vermelho"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#body">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#growcast">Growcast [Episódios]</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#flutter">Webinar em Flutter</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#ux/ui">Jornada UX/UI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#diverse">Diversos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#FAQ">Dúvidas</a>
+                  </li>
+                </ul>
+              </div>
+        </nav> -->
+        <img src="./src/assets/images/growcast-01.png" alt="thumbnail episode Growcast-01">
     </header>
 
-    <main class="container-fluid">
+    <main class="container-fluid text-white" id="main-home">
+        <div class="container">
+            <div class="row align-items-center" id="growcast">
+                <a class="fs-5 mb-3 link-ep" href="#growcast">
+                    Growcast [Episódios]
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </a> 
+            </div>
+            <section id="growcast-eps-container" class="row">
+                
+            </section>
+            <div class="row align-items-center" id="flutter">
+                <a class="fs-5 mb-3 link-ep" href="#flutter">
+                    Webinar em Flutter
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </a> 
+            </div>
+            <section id="flutter-eps-container">
+                <div class="video-cards">
+                    <img src="./src/assets/images/growcast-01.png" alt="">
+                </div>
+                <div class="video-cards">
+                    <img src="./src/assets/images/growcast-01.png" alt="">
+                </div>
+                <div class="video-cards ">
+                    <img src="./src/assets/images/growcast-01.png" alt="">
+                </div>
+                <div class="video-cards ">
+                    <img src="./src/assets/images/growcast-01.png" alt="">
+                </div>
+                <div class="video-cards ">
+                    <img src="./src/assets/images/growcast-01.png" alt="">
+                </div>
+            </section>
+            <div class="row align-items-center" id="ux/ui">
+                <a class="fs-5 mb-3 link-ep" href="#ux/ui">
+                    Jornada UX/UI
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </a> 
+            </div>
+            <section id="ux/ui-eps-container" class="row">
+                
+            </section>
+            <div class="row align-items-center" id="diverse">
+                <a class="fs-5 mb-3 link-ep" href="#diverse">
+                    Diversos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                </a> 
+            </div>
+            <section id="diverse-eps-container" class="row">
+                
+            </section>
+        </div>
 
         <div class="row divider"></div>
     </main>
 
 
-    <footer class="container-fluid px-3">
+    <footer class="container px-3" id="FAQ">
         <div class="row pt-5 px-3">
             <p>Dúvidas? Ligue 0800 591 8942</p>
         </div>
