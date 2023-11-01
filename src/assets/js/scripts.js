@@ -1,9 +1,8 @@
-const buttonShowMenu = document.getElementById("menu-toggler")
-const menu = document.querySelector(".menu")
+const buttonShowAside = document.getElementById("aside-toggler")
 
-buttonShowMenu.addEventListener("click", toggleMenu)
+buttonShowAside.addEventListener("click", toggleAside)
 
-function toggleMenu() {
-    buttonShowMenu.classList.toggle("open")
+function toggleAside() {
+    buttonShowAside.classList.toggle("open")
 }
 

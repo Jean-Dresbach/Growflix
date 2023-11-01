@@ -1,3 +1,22 @@
+/* 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .hero-home {
+        padding: 0;
+    }
+} */
+
+/* INDEX PAGE */
+
 .hero-index {
     background-image: url(../images/banner-initial.png);
     background-attachment: fixed;
@@ -5,23 +24,79 @@
     color: white;
 }
 
-nav > button {
+.btn-primary {
+    background-color: #e50914 !important;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #b6060f !important;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 850px;
+}
+
+.accordion-item {
+    border: 5px solid #000000;
+}
+
+.accordion-button {
+    background-color: #303030 !important;
+    color: #fff;
+    padding: 25px !important;
+    font-size: 26px;
+}
+
+.accordion-button::after {
+    background-image: url(../images/add.svg) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+}
+
+
+
+/* HOME PAGE */
+
+article {
+    max-height: 100vh;
+}
+
+aside {
+    background: linear-gradient(90deg, rgba(48,48,48,1) 30%, rgba(0,0,0,1) 100%);
+    overflow: hidden;
+    color: white;
+    max-width: 400px !important;
+}
+
+#aside-toggler {
+    display: none;
     position: fixed;
     border: none;
-    background-color: #303030;
+    background-color: #0095ff;
     overflow: hidden;
+    width: auto;
     padding: 0;
     z-index: 9999;
-    top: 10px;
-    left: 5vw;  
+    bottom: 25px;
+    right: 20px;  
     border-radius: 50%;
 }
 
-#menu-toggler:hover {
-    background-color: #4d4d4d;
+#aside-toggler:hover {
+    background-color: #0076c9;
 }
 
-#menu-toggler > div {
+#aside-toggler > div {
     width: 50px;
     height: 50px;
     position: relative;
@@ -31,7 +106,7 @@ nav > button {
     transition: all .5s ease-in-out;
 }
 
-#menu-toggler_burger {
+#aside-toggler_burger {
     width: 20px;
     height: 2px;
     border-radius: 5px;
@@ -40,8 +115,8 @@ nav > button {
     box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5)
 }
 
-#menu-toggler_burger::before,
-#menu-toggler_burger::after {
+#aside-toggler_burger::before,
+#aside-toggler_burger::after {
     content: '';
     position: absolute;
     width: 20px;
@@ -52,64 +127,55 @@ nav > button {
     box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5)
 }
 
-#menu-toggler_burger::before {
+#aside-toggler_burger::before {
     transform: translateY(-7px) translateX(-10px);
 }
 
-#menu-toggler_burger::after {
+#aside-toggler_burger::after {
     transform: translateY(7px) translateX(-10px);
 }
 
-#menu-toggler.open {
+#aside-toggler.open {
     background-color: #e50914;
 }
 
-#menu-toggler.open:hover {
+#aside-toggler.open:hover {
     background-color: #ab060e;
 }
 
-#menu-toggler.open #menu-toggler_burger {
+#aside-toggler.open #aside-toggler_burger {
     transform: translateX(-30px);
     background: transparent;
     box-shadow: none;
 }
 
-#menu-toggler.open #menu-toggler_burger::before {
+#aside-toggler.open #aside-toggler_burger::before {
     transform: rotate(45deg) translate(14.5px, -14.5px);
 }
 
-#menu-toggler.open #menu-toggler_burger::after {
+#aside-toggler.open #aside-toggler_burger::after {
     transform: rotate(-45deg) translate(14.5px, 14.5px);
 }
 
-#menu-toggler ~ .menu {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    height: 100vh;
-    top: 0;
-    right: -400px;
-    background-color: #303030;
-    z-index: 9999;
-    color: white;
-    transition: all .3s ease-in-out;
-}
-
-#menu-toggler.open ~ .menu {
-    right: 0;
-    transition: all .3s ease-in-out;
+#aside-toggler.open ~ aside {
+    left: 0;
+    transition: left .3s ease-in-out;
 }
 
 .nav-link {
     padding: 20px 50px;
-    font-size: large;
+    font-size: medium;
     font-weight: 500;
 }
 
 .nav-link:hover {
-    background-color: #676767;
     color: #ff8534;
+    transform: scale(1.5);
+    transition: all .2s ease-in-out;
+}
+
+header > a > img {
+    width: 150px;
 }
 
 #main-home section {
@@ -139,10 +205,6 @@ nav > button {
     color: white;
 }
 
-.hero-home > img {
-    width: 100%;
-}
-
 .link-ep {
     text-decoration: none;
     color: white;
@@ -155,43 +217,13 @@ nav > button {
     color: #ff8534;
 }
 
-.btn-primary {
-    background-color: #e50914 !important;
-    outline: none;
-    box-shadow: none;
-}
 
-.btn-primary:hover {
-    background-color: #b6060f !important;
-}
+
+/* COMMON BETWEEN PAGES */
 
 .divider {
     height: 3px;
     background-color: #515c6f;
-}
-
-.accordion {
-    width: 100%;
-    max-width: 850px;
-}
-
-.accordion-item {
-    border: 5px solid #000000;
-}
-
-.accordion-button {
-    background-color: #303030 !important;
-    color: #fff;
-    padding: 25px !important;
-    font-size: 26px;
-}
-
-.accordion-button::after {
-    background-image: url(../images/add.svg) !important;
-}
-
-.accordion-button:not(.collapsed) {
-    color: white !important;
 }
 
 footer {
@@ -202,8 +234,23 @@ footer .col-6 p {
     font-size: small;
 }
 
-@media (max-width: 576px) {
-    .hero-home {
-        padding: 0;
+.hero-home > img {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    aside {
+        position: fixed !important;
+        transition: left .3s ease-in-out;
+        background: linear-gradient(90deg, rgba(48, 48, 48, 0.8) 30%, rgba(0,0,0,0.7) 100%);
+        top: 0;
+        left: -400px;
+        width: 300px !important;
+        height: 100vh;
+        z-index: 9999;
+    }
+
+    #aside-toggler {
+        display: block;
     }
 }
