@@ -51,7 +51,7 @@
                         <div class="text-start">
                             <p class="m-0">PODCAST</p>
                             <P class="display-1 dis fw-bold">GROWCAST</P>
-                            <button class="btn btn-light d-flex align-items-center gap-1 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button class="btn btn-light d-flex align-items-center gap-1 fw-bold" id="https://www.youtube.com/embed/7OWT3lfHYvE" onclick="showModal(this)" data-bs-toggle="modal" data-bs-target="#video-modal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 15 15">
                                     <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
                                 </svg>
@@ -110,19 +110,23 @@
                         
                     </section>
 
-                    <div class="modal fade" tabindex="-1" id="exampleModal">
+                    <div class="modal fade" tabindex="-1" id="video-modal">
                         <div class="modal-dialog modal-fullscreen">
-                          <div class="modal-content bg-transparent">
-                            <div class="modal-header d-flex justify-content-end border-0">
-                              <button type="button" data-bs-dismiss="modal" aria-label="Close" class="bg-transparent border-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
-                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                                  </svg>
-                              </button>
+                          <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.815);">
+                            <div class="modal-header border-0">
+                                <div class="container d-flex justify-content-end">
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="bg-transparent border-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                             <div class="modal-body p-0">
-                                <div class="ratio ratio-21x9">
-                                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/7OWT3lfHYvE" title="Youtube-video-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <div class="container">
+                                    <div class="ratio ratio-16x9" id="video-container">
+                                        <iframe class="w-100 h-100" src="https://www.youtube.com/embed/7OWT3lfHYvE" title="Youtube-video-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             </div>
                           </div>
