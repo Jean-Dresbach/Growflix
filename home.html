@@ -45,8 +45,20 @@
             <div class="container p-0" id="start">
                 <header class="hero-home text-center p-0">
                     <a href="./index.html" rel="noopener noreferrer" class="d-flex justify-content-center align-items-center py-4"><img src="./src/assets/images/logo-growflix.svg" alt="Texto growflix em vermelho"></a>
-    
-                    <img src="./src/assets/images/growcast-01.png" alt="thumbnail episode Growcast-01">
+                    
+                    <div class="position-relative">
+                        <img class="w-100" src="./src/assets/images/growcast-01.png" alt="Imagem em miniatura do video Growcast #01 | As profissões do futuro.">
+                        <div class="text-start">
+                            <p class="m-0">PODCAST</p>
+                            <P class="display-1 dis fw-bold">GROWCAST</P>
+                            <button class="btn btn-light d-flex align-items-center gap-1 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 15 15">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                                Assistir
+                            </button>
+                        </div>
+                    </div>
                 </header>
         
                 <main id="main-home" class="container">
@@ -59,32 +71,7 @@
                         </a> 
                     </div>
                     <section id="growcast-eps-container">
-                        <div class="video-cards">
-                            <div class="container-fluid h-100">
-                                <div class="row justify-content-center align-items-center h-50">
-                                    <button>
-                                        <img class="img-fluid" src="./src/assets/images/play-button.png" alt="Play icon">
-                                    </button>
-                                </div>
-                                <div class="row align-items-center h-50">
-                                    <h3>Onde trabalhar com qualidade de software? Conheça a Testing Company, empresa parceira da Growdev</h3>
-                                </div>     
-                            </div>
-                            
-                            <img src="./src/assets/images/growcast-01.png" alt="">
-                        </div>
-                        <div class="video-cards">
-                            <img src="./src/assets/images/growcast-01.png" alt="">
-                        </div>
-                        <div class="video-cards ">
-                            <img src="./src/assets/images/growcast-01.png" alt="">
-                        </div>
-                        <div class="video-cards ">
-                            <img src="./src/assets/images/growcast-01.png" alt="">
-                        </div>
-                        <div class="video-cards ">
-                            <img src="./src/assets/images/growcast-01.png" alt="">
-                        </div>
+
                     </section>
 
                     <div class="row align-items-center" id="flutter">
@@ -123,7 +110,26 @@
                         
                     </section>
 
-                    <div class="row divider"></div>
+                    <div class="modal fade" tabindex="-1" id="exampleModal">
+                        <div class="modal-dialog modal-fullscreen">
+                          <div class="modal-content bg-transparent">
+                            <div class="modal-header d-flex justify-content-end border-0">
+                              <button type="button" data-bs-dismiss="modal" aria-label="Close" class="bg-transparent border-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                  </svg>
+                              </button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="ratio ratio-21x9">
+                                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/7OWT3lfHYvE" title="Youtube-video-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    <div class="row divider mt-5"></div>
                 </main>
         
                 <footer class="container px-3" id="FAQ">
@@ -169,22 +175,6 @@
             </div>
         </article>
     </div>
-    
-
-    <!-- <header class="container hero-home mb-5">
-
-    <main class="container-fluid text-white" id="main-home">
-        <div class="container">
-            
-        </div>
-
-        <div class="row divider"></div>
-    </main>
-
-
-    <footer class="container px-3" id="FAQ">
-        
-    </footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 

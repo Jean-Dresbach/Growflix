@@ -116,7 +116,7 @@ const episodes = [
     {
         link: "https://www.youtube.com/embed/FiZMowbaiJA",
         title: "Live #5 Jornada UX/UI: O UX/UI Design é para todos?",
-        image: "https://img.youtube.com/vi/idDoVideo/sddefault.jpg",
+        image: "https://img.youtube.com/vi/FiZMowbaiJA/sddefault.jpg",
         category: "Jornada UX/UI"
     },
     {
