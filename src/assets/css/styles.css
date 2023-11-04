@@ -158,7 +158,7 @@ aside {
     transition: all .2s ease-in-out;
 }
 
-
+/* 
 .hero-home > div > div {
     position: absolute;
     color: white;
@@ -167,7 +167,7 @@ aside {
     bottom: 0;
     left: 0;
     padding: 5vh;
-} 
+}  */
 
 #main-home section {
     width: 100%;
