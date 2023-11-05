@@ -10,6 +10,8 @@ function toggleAside() {
     buttonShowAside.classList.toggle("open")
 }
 
+buttonShowAside.addEventListener("click", toggleAside)
+
 function showModal(buttonEl) {
     videoContainer.innerHTML = `
         <iframe class="w-100 h-100" src="${buttonEl.id}" title="Youtube-video-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -37,8 +39,6 @@ function createVideoCard(episode, container) {
 
     container.appendChild(videoCard)
 }
-
-buttonShowAside.addEventListener("click", toggleAside)
 
 episodes.forEach(episode => {
     if (episode.category === "Growcast [Episódios]") createVideoCard(episode, growcastEpsContainer)

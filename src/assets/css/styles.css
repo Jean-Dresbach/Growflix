@@ -69,7 +69,7 @@ aside {
     overflow: hidden;
     width: auto;
     padding: 0;
-    z-index: 3;
+    z-index: 9999;
     bottom: 25px;
     right: 20px;  
     border-radius: 50%;
@@ -158,16 +158,28 @@ aside {
     transition: all .2s ease-in-out;
 }
 
-/* 
-.hero-home > div > div {
+
+.carousel-item {
+    cursor: pointer;
+}
+
+.carousel-item > div > div {
+    visibility: hidden;
     position: absolute;
     color: white;
     font-weight: bolder;
-    background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.7) 90%, rgba(0,0,0,0) 100%);
-    bottom: 0;
-    left: 0;
-    padding: 5vh;
-}  */
+    background-color: #000000d8;
+    inset: 0;
+    opacity: 0;
+    padding: 2vh;
+    transition: all 0.5s ease-in-out;
+} 
+
+.carousel-item:hover > div > div {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+}
 
 #main-home section {
     width: 100%;
@@ -335,20 +347,12 @@ footer .col-6 p {
         left: -400px;
         width: 300px !important;
         height: 100vh;
-        z-index: 9999;
+        z-index: 999;
     }
 
     #aside-toggler {
         display: block;
     }
-
-    .hero-home > div > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: flex-start;
-        top: 0;
-    } 
 
     ::-webkit-scrollbar {
         display: none;
