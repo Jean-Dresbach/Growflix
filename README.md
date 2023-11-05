@@ -15,7 +15,7 @@ At the moment (2023) I'm studying at [Growdev](https://www.growdev.com.br/) in t
 
 ## 🎨 Layout
 
-[Growflix](https://www.linkedin.com/in/jean-dresbach-a98a90293/?locale=en_US](https://growflix.vercel.app/index.html).
+[Growflix](https://growflix.vercel.app/index.html).
 
 
 ## 🚀 Features
